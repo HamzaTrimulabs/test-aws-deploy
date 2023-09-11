@@ -11,6 +11,20 @@ jobs:
 
     steps:
       - uses: actions/checkout@v3
+
+      - name: Install Node.js and dependencies
+        run: |
+          # Install Node.js (you can specify the version you need)
+          curl -sL https://deb.nodesource.com/setup_18.x | sudo -E bash -
+          sudo -E apt-get install -y nodejs
+          # Install project dependencies
+          npm install
+
+      - name: Build Node.js Application
+        run: |
+          npm run build
+        continue-on-error: false # This ensures the build failure stops the workflow if it fails
+
       - name: deploying application to EC2
         env:
           PRIVATE_KEY: ${{ secrets.SERVER_SSH_KEY  }}
