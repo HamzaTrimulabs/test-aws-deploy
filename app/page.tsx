@@ -50,8 +50,7 @@ export default function Home() {
             NO more Docs <span>-&gt;</span>
           </h2>
           <p>
-            Fddddddddddddddddddddddddddddddddddddddddddddddddddind in-depth
-            information about Next.js features and API.
+            dev test!!! in-depth information about Next.js features and API.
           </p>
         </a>
 
