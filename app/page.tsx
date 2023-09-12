@@ -47,7 +47,7 @@ export default function Home() {
           rel='noopener noreferrer'
         >
           <h2>
-            Docs <span>-&gt;</span>
+            NO more Docs <span>-&gt;</span>
           </h2>
           <p>
             Fddddddddddddddddddddddddddddddddddddddddddddddddddind in-depth
