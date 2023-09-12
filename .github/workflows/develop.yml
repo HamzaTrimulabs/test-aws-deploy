@@ -27,7 +27,7 @@ jobs:
 
       - name: deploying application to EC2
         env:
-          PRIVATE_KEY: ${{ secrets.SERVER_SSH_KEY  }}
+          PRIVATE_KEY: ${{ secrets.SERVER_SSH_KEY_DEV  }}
           HOSTNAME: ${{ secrets.SERVER_HOST_DEV  }}
           USER_NAME: ${{ secrets.SERVER_USERNAME_DEV  }}
 
